@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const imageUrls = [
             'https://i.ibb.co/ycFyr8wt/avatar-washington.jpg',
             'https://i.ibb.co/wrpVbnR5/avatar-voronov.jpg',
-            'https://i.ibb.co/ht6V2fZ/epysium-logo.jpg'
+            'https://i.ibb.co/ht6V2fZ/epysium-logo.jpg',
+            'https://i.ibb.co/WWhK7H23/finlanov-partiya.jpg' // НОВОЕ ИЗОБРАЖЕНИЕ
         ];
         
         imageUrls.forEach(url => {
@@ -67,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 }
                 
-                // Для логотипа проекта
+                // Для логотипа проекта Epysium
                 if (this.id === 'project-img') {
                     const placeholder = this.closest('.project-placeholder');
                     this.style.display = 'none';
@@ -84,6 +85,28 @@ document.addEventListener('DOMContentLoaded', function() {
                         text.textContent = 'Epysium Project';
                         text.style.color = '#3a86ff';
                         text.style.fontSize = '1.2rem';
+                        placeholder.appendChild(text);
+                    }
+                }
+                
+                // Для изображения Финланов Партия
+                if (this.src.includes('finlanov-partiya')) {
+                    const placeholder = this.closest('.project-placeholder');
+                    this.style.display = 'none';
+                    
+                    if (!placeholder.querySelector('.finlanov-fallback')) {
+                        const icon = document.createElement('i');
+                        icon.className = 'fas fa-flag finlanov-fallback';
+                        icon.style.fontSize = '4rem';
+                        icon.style.color = '#ff9900';
+                        icon.style.marginBottom = '20px';
+                        placeholder.appendChild(icon);
+                        
+                        const text = document.createElement('p');
+                        text.textContent = 'Финланов Партия';
+                        text.style.color = '#ff9900';
+                        text.style.fontSize = '1.2rem';
+                        text.style.fontWeight = '600';
                         placeholder.appendChild(text);
                     }
                 }
