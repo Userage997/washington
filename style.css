@@ -863,6 +863,24 @@ body {
     font-size: 0.9rem;
 }
 
+/* Стиль для достижения соратника */
+.ally-achievement {
+    background: linear-gradient(135deg, #ff9900, #ff5e00);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 10px auto 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 10px rgba(255, 153, 0, 0.3);
+}
+
+.ally-achievement i {
+    font-size: 0.8rem;
+}
 /* Адаптивность */
 @media (max-width: 992px) {
     .about-content {
