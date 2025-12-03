@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Предзагрузка изображений
     function preloadImages() {
         const imageUrls = [
-            'https://i.ibb.co/0nGpLTH/avatar-washington.jpg',
+            'https://i.ibb.co/ycFyr8wt/avatar-washington.jpg,
             'https://i.ibb.co/wrpVbnR5/avatar-voronov.jpg',
             'https://i.ibb.co/ht6V2fZ/epysium-logo.jpg'
         ];
