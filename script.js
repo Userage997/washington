@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Предзагрузка изображений
     function preloadImages() {
         const imageUrls = [
-            'https://i.ibb.co/ycFyr8wt/avatar-washington.jpg,
+            'https://i.ibb.co/ycFyr8wt/avatar-washington.jpg',
             'https://i.ibb.co/wrpVbnR5/avatar-voronov.jpg',
             'https://i.ibb.co/ht6V2fZ/epysium-logo.jpg'
         ];
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
     
-    document.querySelectorAll('.friend-card, .stat-card, .ally-card').forEach(card => {
+    document.querySelectorAll('.ally-card, .stat-card').forEach(card => {
         observer.observe(card);
     });
     
